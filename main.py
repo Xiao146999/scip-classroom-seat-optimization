@@ -1,10 +1,9 @@
-# main.py 老板
 import sys
 import os
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'src'))
 
-from src.seat_allocation.model import build_model
-from src.seat_allocation.solver import solve_and_print
+from seat_allocation.core.allocator import build_model
+from seat_allocation.core.scheduler import solve_and_print
 
 if __name__ == "__main__":
     print("开始构建模型...")

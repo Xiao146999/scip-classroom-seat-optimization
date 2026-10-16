@@ -1,0 +1,8 @@
+[project]
+name = "scip-classroom-seat-optimization"
+version = "0.1.0"
+description = "基于 SCIP 求解器的教室座位分配优化系统"
+requires-python = ">=3.10"
+dependencies = [
+    "pyscipopt>=5.0.0",
+]
